@@ -1,0 +1,11 @@
+from django.apps import AppConfig
+
+
+class Question2Config(AppConfig):
+    default_auto_field = 'django.db.models.BigAutoField'
+    name = 'question2'
+
+
+    # Importing signals
+    def ready(self):
+        import question2.signals

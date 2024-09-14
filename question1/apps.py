@@ -6,6 +6,4 @@ class Question1Config(AppConfig):
     name = 'question1'
 
 
-    # Importing signals
-    def ready(self):
-        import question1.signals
+    
