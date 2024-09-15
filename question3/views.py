@@ -4,9 +4,7 @@ from django.db import transaction
 from .models import Custom_user
 import uuid
 
-
 # Create your views here.
-
 
 def create_user(request):
     try:
@@ -14,8 +12,8 @@ def create_user(request):
         with transaction.atomic():
             # This will trigger the post_save signal
             user = Custom_user.objects.create(username=f"testuser  id { str(myuuid)}")
-            # Simulate an error to trigger a rollback
-            raise Exception("Simulated transaction failure")
+            #An error to trigger a rollback
+            raise Exception("Simulated transaction failure") # it will failed to create user instance.
             message = ""
     except Exception as e:
         message = 'faild to '

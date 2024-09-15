@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'question1.apps.Question1Config',
+    'question1Async.apps.Question1AsyncConfig',
     'question2.apps.Question2Config',
     'question3.apps.Question3Config',
 ]
