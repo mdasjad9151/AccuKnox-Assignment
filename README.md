@@ -42,4 +42,4 @@ If we need a signal handler to run only after a successful database commit, we c
 2. We can iterate over an instance of the Rectangle class
 3. When an instance of the Rectangle class is iterated over, we first get its length in theformat: {'length': <VALUE_OF_LENGTH>} followed by the width {width:<VALUE_OF_WIDTH>}
 
-**Answer:-** signals/oops/Q1.py
+**Answer:-** code dir: - signals/oops/Q1.py
